@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#2b2e33;
+    --text-color:#fff;
+    --main-color:rgb(17, 255, 0);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.titulo{
+    color: orange;
+    font-size: 3.5rem;
+    
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2.5rem;
+    color:var(--text-color);
+    font-weight: 600;
+    cursor: default;
+
+}
+.navbar a{
+    font-size: 3.1rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.activate{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+
+}
+.himno{
+    display: flex;
+    justify-items: center;
+    align-items:    center;
+}
+.himno-content h3{
+    font-size: 3.2rem;
+    font-weight: 200;
+}
+span{
+    color: var(--main-color);
+}
+.himno-content h1{
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 1.0;
+}
+.himno-img img{
+    width: 20vw;
+}
+.himno-img2 img {
+    width: 20vw;
+    
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color:var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+
+}
+.social-media a :hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: orange;
+    border-radius: 4REM;
+    box-shadow: 0 0 1rem orange;
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: 1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    text-align: center;
+   
+    
+}
+.btn:hover{
+    box-shadow: none;
+}
+
+.himno-content{
+    text-align: center;
+    margin-left: 5%;
+}
+.social-media{
+    text-align: center;
+}
+
+
+
+.escudo-content{
+    margin-left: 39%;
+    margin-top: 5%;
+}
+.texto-content h1{
+    
+    font-size: 3.6rem;
+}
+.texto-content h2{
+    font-size: 3.6rem;
+    color:var(--main-color)
+    
+}
+
+.logo-content{
+    max-width: 200px;
+    margin-left: 35%;
+    margin-top: 5%;
+   
+}
+.ltexto-content{
+    font-size: 2.3rem;
+    float: right;
+}
+.bandera-content{
+    margin-left: 40%;
+    margin-top: 5%;
+
+
+}
+.btexto-content h1{
+    font-size: 3.6rem;
+}
+.btexto-content h2{
+    font-size: 3.6rem;
+    color:var(--main-color)
+}
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.induccion-content h3 {
+    font-size: 3.6rem;
+}
+.img{
+    width: 1000px;
+    right: 500px;
+    margin-left: 25%;
+    
+}
+.proyecto-content h3 {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: 300px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-icontop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background-color: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+
+}
+
+.footer-icontop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-icontop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+.portafolio {
+    background: var(--second-bg-color);
+}
+
+.portafolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+
+.portafolio-container .portafolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portafolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portafolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portafolio-box .portafolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+
+}
+
+.portafolio-box:hover .portafolio-layer {
+    transform: translateY(0);
+}
+
+.portafolio-layer h4 {
+    font-size: 3rem;
+
+}
+
+.portafolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portafolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portafolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+
+    
+
+
